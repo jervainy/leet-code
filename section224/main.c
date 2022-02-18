@@ -51,7 +51,7 @@ int calculate(char* s) {
     return res;
 }
 
-int main() {
+int main224_0() {
 //    char *str = "(1+(-4+5+92)-3)+(6+8)";
     char *str = "1-(4-4)";
     int res = calculate(str);
