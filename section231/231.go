@@ -1,16 +1,11 @@
 package main
 
+func isPowerOfTwo0(n int) bool {
+	return n > 0 && n & (n - 1) == 0
+}
+
 func isPowerOfTwo(n int) bool {
-	if n == 1 {
-		return true
-	}
-	for n >= 2 {
-		if n == 2 {
-			return true
-		}
-		n = n >> 1
-	}
-	return false
+	return n > 0 && n & (-n) == n
 }
 
 func main() {
